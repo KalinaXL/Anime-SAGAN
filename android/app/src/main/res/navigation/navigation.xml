@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentHome">
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.example.animesagan.FragmentHome"
+        android:label="FragmentHome" >
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentImage"
+            app:destination="@id/fragmentImage" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentImage"
+        android:name="com.example.animesagan.FragmentImage"
+        android:label="FragmentImage" />
+</navigation>
